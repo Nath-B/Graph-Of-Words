@@ -16,6 +16,8 @@ The important parameters taken into account in the representation are :
 The approach used here has been proposed as an extension of Vazirgiannis and Rousseau's work, in http://www.lix.polytechnique.fr/~rousseau/papers/rousseau-cikm2013.pdf.
 The idea is to build the term-weights (TW) for each document by using a centrality measure on the graph of words of the document, and, as compared with the TFIDF approach, to multiply these weights by a graph-based IDF value for each term. This graph-based IDF value for each word can be computed as a centrality measure of this term on the overall graph formed by all the training documents.
 
+![Graph of Words](GoW.png?raw=true "Graph of Words for a given document")
+
 ## Software and packages
 
 The project has been implemented as an IPython notebook. The networkx (1.9.1) package is used to build the graphs of words, while scikit-learn (0.16.0) is used to train and test the different classifiers.
